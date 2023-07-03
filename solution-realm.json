@@ -2,6 +2,20 @@
   "realm": "solution",
   "displayName": "Solution",
   "enabled": true,
+  "clients": [
+    {
+      "clientId": "demo-client",
+      "name": "Demo Client",
+      "protocol": "openid-connect",
+      "clientAuthenticatorType": "client-secret",
+      "publicClient": false,
+      "secret": "2DA74cJxhKiGQAz7ezoevBatG9MxRuVu",
+      "enabled": true,
+      "redirectUris": [
+        "http://localhost:3000/solution/oidc-redirect"
+      ]
+    }
+  ],
   "users": [
     {
       "username": "alice",
