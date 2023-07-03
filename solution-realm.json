@@ -1,0 +1,23 @@
+{
+  "realm": "solution",
+  "displayName": "Solution",
+  "enabled": true,
+  "users": [
+    {
+      "username": "alice",
+      "email": "alice@example.com",
+      "firstName": "Alice",
+      "lastName": "Doe",
+      "requiredActions": [],
+      "emailVerified": true,
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "userLabel": "initial",
+          "value": "alice"
+        }
+      ]
+    }
+  ]
+}

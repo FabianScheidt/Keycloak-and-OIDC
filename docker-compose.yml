@@ -5,3 +5,14 @@ services:
     build: .
     ports:
       - '3000:3000'
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.1.2
+    command: ['start-dev', '--import-realm']
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    volumes:
+      - "./solution-realm.json:/opt/keycloak/data/import/solution-realm.json"
+    ports:
+      - '8080:8080'
