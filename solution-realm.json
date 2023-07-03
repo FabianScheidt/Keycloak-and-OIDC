@@ -16,6 +16,17 @@
       ]
     }
   ],
+  "identityProviders": [
+    {
+      "alias": "github",
+      "providerId": "github",
+      "enabled": true,
+      "config": {
+        "clientSecret": "**********",
+        "clientId": "073252858d2fda713bb9"
+      }
+    }
+  ],
   "users": [
     {
       "username": "alice",
